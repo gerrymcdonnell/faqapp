@@ -13,13 +13,13 @@ export class DataService {
     this.questions=
     [
       {
-        text:"what is ur name",
-        answer:"ged",
+        text:"Capital of england?",
+        answer:"london",
         hide:true
       },
       {
-        text:"what is ur name2",
-        answer:"ged2",
+        text:"Where is the city of paris?",
+        answer:"France",
         hide:true
       }
     ];
@@ -27,6 +27,14 @@ export class DataService {
 
    getQuestions(){
      return this.questions;
+   }
+
+   /*
+   note push adds to the end
+   unshift andds to the start
+   */
+   addQuestion(question:Question){
+     this.questions.unshift(question);
    }
 
 }

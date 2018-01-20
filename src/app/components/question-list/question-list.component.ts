@@ -21,4 +21,10 @@ export class QuestionListComponent implements OnInit {
     this.questions=this.dataService.getQuestions();
   }
 
+  addQuestion(question:Question){
+    console.log(question);
+
+    this.dataService.addQuestion(question);
+  }
+
 }
