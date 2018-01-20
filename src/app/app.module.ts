@@ -8,12 +8,14 @@ import { QuestionListComponent } from './components/question-list/question-list.
 
 //import data service
 import {DataService} from './services/data.service';
+import { QuestionComponent } from './components/question/question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    QuestionListComponent
+    QuestionListComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule
